@@ -1,0 +1,90 @@
+body {
+    background-color: #FFFC00; /* Yellow Theme */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main-container {
+    background-color: white;
+    width: 300px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* --- LOGO KA STYLE --- */
+.app-logo {
+    width: 60px;  /* Logo ka size yahan se control karein */
+    height: auto;
+    margin-bottom: 10px; /* Logo aur Title ke beech gap */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.input-box {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-box label {
+    font-size: 10px;
+    color: #888;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-box input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding: 8px 0;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-box input:focus {
+    border-bottom-color: #000;
+}
+
+.forgot-link {
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.forgot-link a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #007bff;
+}
+
+.login-btn {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #555;
+}
