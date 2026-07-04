@@ -12,7 +12,7 @@ const client = new Client({
     user: 'postgres',        
     host: 'localhost',
     database: 'Login Page',  // <--- YAHAN CHANGE KIYA (Pehle 'postgres' tha)
-    password: 'Sainiabhay24', 
+    password: 'Your Pass', 
     port: 5432,
 });
 
