@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 const client = new Client({
     user: 'postgres',        
     host: 'localhost',
-    database: 'Login Page',  // <--- YAHAN CHANGE KIYA (Pehle 'postgres' tha)
+    database: 'Login Page',  
     password: 'Your Pass', 
     port: 5432,
 });
