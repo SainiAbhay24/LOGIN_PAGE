@@ -17,11 +17,11 @@ body {
     text-align: center;
 }
 
-/* --- LOGO KA STYLE --- */
+/* --- LOGO STYLE --- */
 .app-logo {
-    width: 60px;  /* Logo ka size yahan se control karein */
+    width: 60px;  
     height: auto;
-    margin-bottom: 10px; /* Logo aur Title ke beech gap */
+    margin-bottom: 10px; 
     display: block;
     margin-left: auto;
     margin-right: auto;
